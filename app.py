@@ -22,7 +22,7 @@ CORS(app)
 scheduler = APScheduler()
 
 # Scheduled job example
-@scheduler.task('interval', id='call_api_job', seconds=300, misfire_grace_time=900)
+@scheduler.task('interval', id='call_api_job', seconds=60, misfire_grace_time=900)
 def call_api_job():
     print(f"Scheduler running at {datetime.datetime.now()}")
     try:  # <-- must be here
