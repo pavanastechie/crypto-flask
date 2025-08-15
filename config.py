@@ -1,0 +1,6 @@
+import os
+
+AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID', 'AKIAU2HBO7TW62P6OHH7')
+AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY', '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')
+AWS_REGION = os.getenv('AWS_REGION', 'ap-south-1')
+
